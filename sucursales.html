@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<title>Sucursales en en el país</title>
+	<link rel="shortcut icon" href="img/favicon.png"><link rel="stylesheet" href="css/style.css">
+</head>	
+
+
+<body class="sucursalesBg contenedorSuc">
+
+<div class="header">
+	<header id="inicio" class="encabezado botoneraSuc" > 
+		<nav class="bgcolorNav">	
+		<a href="index.html">
+		<img src="img/cotton-logo-new.webp" alt="logo de cotton" class= "w-25 text-center"></a>
+			
+		</nav>
+</header> 
+ </div>
+
+<main>
+	<h1 class="sucursalesh1">Sucursales en el País</h1>
+<section class="container-fluid" >
+<div class="row" >  
+  <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+
+  	<!--empiza carousel-->
+  	<div id="carouselExampleFade" class="carousel slide carousel-fade py-5 px-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/shelf.jpg" class="d-block w-75" alt="Sucursal de Buenos Aires">
+    </div>
+    <div class="carousel-item">
+      <img src="img/sucursal4.jpg" class="d-block w-75" alt="Sucursal de Córdoba">
+    </div>
+    <div class="carousel-item">
+      <img src="img/sucursal3.jpg" class="d-block w-75" alt="Sucursal de San Juan">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- final carousel-->
+		
+	</div>
+
+		<!--comienza google maps-->
+		
+		<div class=" col-sm-12 col-md-6 col-lg-6 text-center py-5">
+     <iframe width="400" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=-31.412036510361773~-64.19101238250732&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+     </iframe>
+     <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=-31.412036510361773~-64.19101238250732&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">Ver mapa más grande</a> &nbsp; | &nbsp;
+        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=-31.412036510361773~-64.19101238250732&amp;sty=r&amp;lvl=16&amp;rtp=~pos.-31.412036510361773_-64.19101238250732____&amp;FORM=MBEDLD"></a>
+     </div>
+     </div>
+   </div> 
+
+     
+     <br><br>
+
+     <div class="sucursalesForm">
+		<form action="selecciona localidad"></form>
+
+			<fieldset>
+				<h3 class="customSelect">Seleccioná provincia</h3>
+				<select name="Selecciona provincia" id="selecciona provincia" class="formSelect"> 
+					<option value="Cordoba">Córdoba</option>
+					<option value="Buenos Aires">Buenos Aires</option>
+					<option value="San Juan">San Juan</option>
+					<option value="Mendoza">Mendoza</option>
+					<option value="San Luis">San Luis</option>
+				</select>
+				<br>
+				<h3 class="customSelect">Seleccioná localidad</h3>
+				<select name="Selecciona Localidad" id="Selecciona Localidad" class="formSelect">
+				    <option value="Capital">Capital</option>
+				</select>    
+			</fieldset>
+		</div>
+
+
+
+		  
+
+  </main>
+
+ </div>
+
+     <br><br>
+
+
+     <footer class="pie">
+    	<!-- inicia footer-->
+      <div class="footer pie">
+    	<h3 class="footerTitleMd">Seguinos en las redes</h3><br>
+    	<a href="https://facebook.com" target="_blank">
+    	<img src="img/facebook.png" alt="seguinos en facebook" class="footerIcon"></a>
+    	<a href="https://twitter.com" target="_blank">
+    	<img src="img/twitter.png" alt="seguinos en twitter" class="footerIcon"></a>
+    	<a href="https://instagram.com" target="_blank">
+    	<img src="img/insta2ok.png" alt="seguinos en instagram" class="footerIconSm"></a>
+    	<br><br>
+    	
+    	<h3 class="footerTitleMd">Suscribite a nuestro Newsletter</h3>
+    	
+    	   <div class="newsletter">
+    	      <p>¿Deseas suscribirte para recibir ofertas y descuentos?</p>
+              <label for="email" class="newsletter">Ingresa tu e-mail</label>
+    	      <input type="text" placeholder="Ingresa tu e-mail" name="email" id="email" class="field"><br>
+    	      <input type="submit" value="Enviar" class="btn btnColor">
+    	      <br>
+    	     
+		     <a href="#inicio" class="bgColor">INICIO</a>
+
+ 		    </div>  
+
+ 		 </div>
+
+    	      <!-- ends footer -->
+      </footer>
+
+
+
+	 <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
